@@ -1,0 +1,24 @@
+name: SSIWallet
+version: 1.0.0
+main: com.ssi.wallet.SSIWalletPlugin
+author: SSI Developer
+description: Minecraft plugin for Self-Sovereign Identity wallet integration
+api-version: 1.19
+
+commands:
+  wallet:
+    description: Switch between web and mobile wallet modes
+    usage: /<command> [web|mobile|status]
+    aliases: [ssi]
+  verify:
+    description: Request identity verification from connected wallet
+    usage: /<command>
+    aliases: [identity, proof]
+
+permissions:
+  ssi.wallet.use:
+    description: Allow using SSI wallet commands
+    default: true
+  ssi.wallet.verify:
+    description: Allow requesting identity verification
+    default: true
