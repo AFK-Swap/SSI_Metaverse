@@ -1,0 +1,34 @@
+name: SSIVerification
+version: 1.0.0
+main: com.ssi.verification.SimpleSSIPlugin
+api-version: 1.20
+author: SSI_Metaverse
+description: Self-Sovereign Identity verification plugin for Minecraft Paper server with QR code support
+
+commands:
+  verify:
+    description: Verify your identity using SSI credentials
+    usage: /verify - generates QR for mobile SSI wallet verification
+    permission: ssi.verify
+  ssiverify:
+    description: Check if a player is verified
+    usage: /ssiverify <player>
+    permission: ssi.check
+  reset:
+    description: Reset your verification status for testing
+    usage: /reset - removes your verified status
+    permission: ssi.reset
+
+permissions:
+  ssi.verify:
+    description: Allows players to verify their identity
+    default: true
+  ssi.check:
+    description: Allows checking other players' verification status
+    default: op
+  ssi.reset:
+    description: Allows players to reset their verification status for testing
+    default: true
+  ssi.admin:
+    description: Admin permissions for SSI plugin
+    default: op
