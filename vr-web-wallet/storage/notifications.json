@@ -1,0 +1,39 @@
+[
+  {
+    "id": "notification-1754409648343",
+    "type": "credential-offer",
+    "title": "SwapPC Employee Credential",
+    "message": "New employee credential from SwapPC issued by ACA-Py",
+    "credentialData": {
+      "schemaId": "EQ6SUp3NCA6c4CHrnwKvRy:2:Identity_Schema:1.0.1754408693670",
+      "credentialDefinitionId": "EQ6SUp3NCA6c4CHrnwKvRy:3:CL:2885481:University-Certificate",
+      "credentialPreview": {
+        "attributes": [
+          {
+            "name": "name",
+            "value": "FAHMIDUR IQBAL SWAPNIL"
+          },
+          {
+            "name": "email",
+            "value": "fahmidur.i.swapnil@gmail.com"
+          },
+          {
+            "name": "department",
+            "value": "CSE"
+          },
+          {
+            "name": "issuer_did",
+            "value": "EQ6SUp3NCA6c4CHrnwKvRy"
+          },
+          {
+            "name": "age",
+            "value": "26"
+          }
+        ]
+      }
+    },
+    "timestamp": "2025-08-05T16:00:48.343Z",
+    "status": "accepted",
+    "acceptedAt": "2025-08-05T16:00:56.567Z"
+  }
+]
