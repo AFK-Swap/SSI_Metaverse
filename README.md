@@ -48,14 +48,68 @@ sudo apt install python3 python3-pip
 
 Follow the comprehensive setup guide from [CrypticConsultancy SSI Tutorial](https://github.com/CrypticConsultancyLimited/ssi-tutorial/blob/credo-acapy/demo/acapy/README.md) for detailed ACA-Py installation and configuration.
 
-**Key ACA-Py Installation Steps:**
-```bash
-# Install ACA-Py
-pip3 install aries-cloudagent
+**Prerequisites:**
+- Docker (>= v24.0.1)
+- Node.js (>= v16)
+- Python (>= 3.12)
+- Yarn (>= v1.22.22)
+- Git
+- Ngrok
 
-# Verify installation
-aca-py --version
+**ACA-Py Agent Setup:**
+```bash
+# Clone OpenWallet's official ACA-Py repository in a separate directory
+git clone -b 0.12.3 https://github.com/openwallet-foundation/acapy.git
+
+# Navigate to demo folder
+cd acapy/demo
+
+# Update asyncpg version to avoid compatibility issues
+sed -i 's/asyncpg.*/asyncpg==0.28.0/' requirements.txt
 ```
+
+**Install Dependencies:**
+```bash
+# Install requirements
+python3 -m pip install -r requirements.txt
+
+# If using Python >= 3.12 and Debian Based Systems (like Ubuntu), avoid environment errors:
+python3 -m pip install -r requirements.txt --break-system-packages
+```
+
+**Start the Agent (with Ngrok for public endpoint):**
+```bash
+# Start Ngrok for port 8020
+ngrok http 8020
+
+# Run demo agent. ACA-Py agent will automatically detect the ngrok url and use it as the public endpoint.
+LEDGER_URL=http://dev.greenlight.bcovrin.vonx.io ./run_demo faber
+
+# Or you can set manual endpoint yourself:
+LEDGER_URL=http://dev.greenlight.bcovrin.vonx.io AGENT_ENDPOINT=https://{ngrok_url} ./run_demo faber
+```
+
+**Ngrok Setup (Required for Public Endpoints):**
+
+Ngrok is required to create public endpoints for ACA-Py agents to communicate over the internet.
+
+```bash
+# Install ngrok (Ubuntu/Debian)
+curl -sSL https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null
+echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list
+sudo apt update && sudo apt install ngrok
+
+# Or download directly
+wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
+tar xvzf ngrok-v3-stable-linux-amd64.tgz
+sudo cp ngrok /usr/local/bin
+
+# Sign up at https://ngrok.com and get your auth token
+ngrok authtoken YOUR_AUTH_TOKEN
+```
+
+**Troubleshooting:**
+⚠️ If the above fails with a network error, try switching to mobile data or a different Wi-Fi.
 
 ### Project Setup
 
