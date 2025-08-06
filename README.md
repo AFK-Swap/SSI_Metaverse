@@ -361,9 +361,9 @@ This project extends the excellent [SSI Tutorial by CrypticConsultancy](https://
 
 ## 📚 Documentation
 
-- [`SYSTEM_ARCHITECTURE.md`](SYSTEM_ARCHITECTURE.md) - Complete technical architecture
-- [`SSI_PROTOCOL_FLOWS.md`](SSI_PROTOCOL_FLOWS.md) - Protocol flow documentation  
-- [`FORMAL_PROTOCOL_SPECIFICATION.md`](FORMAL_PROTOCOL_SPECIFICATION.md) - Formal protocol specification
+- [CrypticConsultancy SSI Tutorial](https://github.com/CrypticConsultancyLimited/ssi-tutorial/blob/credo-acapy/demo/acapy/README.md) - Base SSI framework
+- [Hyperledger Aries Documentation](https://aries.js.org/) - Core SSI protocols
+- [ACA-Py Documentation](https://aca-py.org/) - Agent framework documentation
 
 ## 🐛 Troubleshooting
 

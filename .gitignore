@@ -122,6 +122,15 @@ Thumbs.db
 *.p12
 
 # ===================================
+# PRIVATE DOCUMENTATION (Keep local only)
+# ===================================
+
+# Architecture and Protocol Documentation (private)
+SYSTEM_ARCHITECTURE.md
+SSI_PROTOCOL_FLOWS.md
+FORMAL_PROTOCOL_SPECIFICATION.md
+
+# ===================================
 # RUNTIME & CACHE
 # ===================================
 
