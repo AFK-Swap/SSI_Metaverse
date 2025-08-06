@@ -244,19 +244,97 @@ cd minecraft-paper-ssi
 ./start-with-ssi.sh
 ```
 
-## 🎮 How to Use
+## 🎮 How to Use the SSI Metaverse System
 
-### In Minecraft:
-1. **Connect**: `localhost:25565` (or your server IP)
-2. **Verify Identity**: Type `/verify web`
-3. **Phone Browser Opens**: In-game credential sharing interface
-4. **Share Credentials**: Click "📤 Share Credential" button
-5. **Get Verified**: Receive glowing effect + trusted status
+### Step 1: Issue Credentials
 
-### Admin Interface:
-- **Access**: http://localhost:3000
-- **Monitor**: View all verification activities
-- **Manage**: Trust registry and credential definitions
+**1.1 Access Issuer Interface:**
+- **URL**: http://localhost:3000
+- **Purpose**: Issue credentials to users
+
+**1.2 Issue Credentials (Two Options):**
+
+**Option A - Issue to Phone Wallet:**
+1. Navigate to http://localhost:3000
+2. Follow the credential issuance process
+3. Use your mobile SSI wallet (like Bifold) to scan QR codes
+4. Accept the credential in your mobile wallet
+
+**Option B - Issue to Web Wallet:**
+1. Navigate to http://localhost:3000  
+2. Issue credential for web wallet
+3. Accept the credential through the web wallet interface
+
+### Step 2: Configure Trust Registry
+
+**2.1 Access Admin Interface:**
+- **URL**: http://localhost:3000/admin
+- **Purpose**: Manage trust registry and trusted DIDs
+
+**2.2 Add Issuer to Trust Registry:**
+1. After issuing credentials, copy the issuer's DID
+2. Go to http://localhost:3000/admin
+3. Add the issuer DID to the trusted registry
+4. This enables the system to validate credentials from this issuer
+
+### Step 3: Minecraft Verification
+
+**3.1 Connect to Minecraft Server:**
+- **Server**: `localhost:25565` (or your server IP)
+- **Game Mode**: Creative mode for easy testing
+
+**3.2 Verification Commands:**
+
+**Phone Wallet Verification:**
+```minecraft
+/verify
+```
+- Opens QR code for mobile wallet scanning
+- Scan with your mobile SSI wallet (Bifold, etc.)
+- Share credentials from your phone
+- Receive verification status in Minecraft
+
+**Web Wallet Verification:**
+```minecraft
+/verify web
+```  
+- Opens phone-shaped browser window in-game
+- Shows web wallet interface (localhost:3001)
+- Click "📤 Share Credential" button
+- Window auto-closes after verification
+- Receive glowing effect + trusted status
+
+**Reset Verification:**
+```minecraft
+/reset
+```
+- Clears current verification status
+- Allows you to test verification again
+- Removes verification effects and status
+
+### Step 4: Verification Process Flow
+
+**4.1 Complete Verification Workflow:**
+1. **Issue Credential**: http://localhost:3000 → Issue to wallet
+2. **Accept Credential**: In your chosen wallet (mobile or web)
+3. **Add to Trust Registry**: http://localhost:3000/admin → Add issuer DID
+4. **Connect to Minecraft**: `localhost:25565`
+5. **Verify Identity**: `/verify` or `/verify web`
+6. **Share Credentials**: Through wallet interface
+7. **Get Verified**: Receive verification confirmation and effects
+
+**4.2 Verification Results:**
+- ✅ **Success**: Player gets glowing effect and "VERIFIED" status
+- ❌ **Failed**: Error message with reason (untrusted DID, invalid credential, etc.)
+- ⏳ **Timeout**: Verification expires after 5 minutes
+
+### Admin Monitoring
+
+**Access Administrative Functions:**
+- **Main Interface**: http://localhost:3000 - Issue and manage credentials
+- **Admin Panel**: http://localhost:3000/admin - Manage trust registry
+- **Web Wallet**: http://localhost:3001 - Web-based wallet interface
+- **Health Check**: `./scripts/health-check.sh` - Monitor all services
 
 ## 📊 Service Ports
 
