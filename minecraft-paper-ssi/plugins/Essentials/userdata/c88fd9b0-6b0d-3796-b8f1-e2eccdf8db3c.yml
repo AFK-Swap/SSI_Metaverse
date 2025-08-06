@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1754427861887
+  login: 1754427772596
+money: '0'
+last-account-name: aceSwap
+logoutlocation:
+  world: 3b179c1d-0d59-4eae-99f2-3ba9c554a0bb
+  world-name: ssi-metaverse
+  x: -15.141398625269309
+  y: -60.0
+  z: -12.3574283726227
+  yaw: 145.94992065429688
+  pitch: -15.149998664855957
+lastlocation:
+  world: f3ca7a00-5f5d-4b69-9e78-50fbebd185d7
+  world-name: ssi-metaverse
+  x: 4.489875080872225
+  y: -60.0
+  z: -0.9089108224171035
+  yaw: -45.90045166015625
+  pitch: 4.800002574920654

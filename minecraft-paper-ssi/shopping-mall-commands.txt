@@ -1,0 +1,199 @@
+# Copy and paste these commands one by one in Minecraft chat (as admin/op)
+# Or use them in command blocks
+# Position yourself where you want the mall center to be built
+
+# === FOUNDATION ===
+/fill ~-50 ~-1 ~-50 ~50 ~-1 ~50 quartz_block
+/fill ~-50 ~ ~-50 ~50 ~ ~50 polished_quartz_block
+
+# === EXTERIOR WALLS ===
+/fill ~-50 ~ ~-50 ~50 ~30 ~-50 quartz_block
+/fill ~-50 ~ ~50 ~50 ~30 ~50 quartz_block
+/fill ~-50 ~ ~-50 ~-50 ~30 ~50 quartz_block
+/fill ~50 ~ ~-50 ~50 ~30 ~50 quartz_block
+
+# === MAIN ENTRANCE ===
+/fill ~-7 ~1 ~-50 ~7 ~8 ~-50 air
+/fill ~-8 ~1 ~-50 ~-8 ~8 ~-50 quartz_pillar
+/fill ~8 ~1 ~-50 ~8 ~8 ~-50 quartz_pillar
+
+# === SHOP 1 - ELECTRONICS (Ground Floor Left) ===
+/fill ~-45 ~1 ~-45 ~-25 ~5 ~-25 glass
+/fill ~-45 ~1 ~-45 ~-45 ~5 ~-25 white_concrete
+/fill ~-45 ~1 ~-25 ~-25 ~5 ~-25 white_concrete
+/fill ~-25 ~1 ~-45 ~-25 ~5 ~-25 white_concrete
+/fill ~-44 ~1 ~-44 ~-26 ~1 ~-26 polished_blackstone
+/fill ~-35 ~1 ~-45 ~-34 ~5 ~-45 air
+
+# === SHOP 2 - FASHION ===
+/fill ~-20 ~1 ~-45 ~0 ~5 ~-25 glass
+/fill ~-20 ~1 ~-45 ~-20 ~5 ~-25 pink_concrete
+/fill ~-20 ~1 ~-25 ~0 ~5 ~-25 pink_concrete
+/fill ~0 ~1 ~-45 ~0 ~5 ~-25 pink_concrete
+/fill ~-19 ~1 ~-44 ~-1 ~1 ~-26 pink_wool
+/fill ~-10 ~1 ~-45 ~-9 ~5 ~-45 air
+
+# === SHOP 3 - BOOKSTORE ===
+/fill ~5 ~1 ~-45 ~25 ~5 ~-25 glass
+/fill ~5 ~1 ~-45 ~5 ~5 ~-25 brown_concrete
+/fill ~5 ~1 ~-25 ~25 ~5 ~-25 brown_concrete
+/fill ~25 ~1 ~-45 ~25 ~5 ~-25 brown_concrete
+/fill ~6 ~1 ~-44 ~24 ~1 ~-26 dark_oak_planks
+/fill ~15 ~1 ~-45 ~16 ~5 ~-45 air
+
+# === SHOP 4 - LUXURY ===
+/fill ~30 ~1 ~-45 ~45 ~5 ~-25 glass
+/fill ~30 ~1 ~-45 ~30 ~5 ~-25 gold_block
+/fill ~30 ~1 ~-25 ~45 ~5 ~-25 gold_block
+/fill ~45 ~1 ~-45 ~45 ~5 ~-25 gold_block
+/fill ~31 ~1 ~-44 ~44 ~1 ~-26 yellow_carpet
+/fill ~37 ~1 ~-45 ~38 ~5 ~-45 air
+
+# === CENTRAL ATRIUM ===
+/fill ~-15 ~1 ~-15 ~15 ~25 ~15 air
+/fill ~-5 ~1 ~-5 ~5 ~3 ~5 prismarine_bricks
+/fill ~-3 ~3 ~-3 ~3 ~5 ~3 water
+/setblock ~ ~5 ~ sea_lantern
+
+# === SECOND FLOOR PLATFORM ===
+/fill ~-45 ~10 ~-45 ~45 ~10 ~45 quartz_block
+/fill ~-15 ~10 ~-15 ~15 ~10 ~15 air
+
+# === SECOND FLOOR SHOPS ===
+# Shop 5 - Gaming/VR
+/fill ~-45 ~11 ~-45 ~-25 ~15 ~-25 glass
+/fill ~-45 ~11 ~-45 ~-45 ~15 ~-25 purple_concrete
+/fill ~-45 ~11 ~-25 ~-25 ~15 ~-25 purple_concrete
+/fill ~-25 ~11 ~-45 ~-25 ~15 ~-25 purple_concrete
+/fill ~-44 ~11 ~-44 ~-26 ~11 ~-26 purple_carpet
+/fill ~-35 ~11 ~-45 ~-34 ~15 ~-45 air
+
+# Shop 6 - Sports
+/fill ~-20 ~11 ~-45 ~0 ~15 ~-25 glass
+/fill ~-20 ~11 ~-45 ~-20 ~15 ~-25 lime_concrete
+/fill ~-20 ~11 ~-25 ~0 ~15 ~-25 lime_concrete
+/fill ~0 ~11 ~-45 ~0 ~15 ~-25 lime_concrete
+/fill ~-19 ~11 ~-44 ~-1 ~11 ~-26 lime_wool
+/fill ~-10 ~11 ~-45 ~-9 ~15 ~-45 air
+
+# Shop 7 - Home & Garden
+/fill ~5 ~11 ~-45 ~25 ~15 ~-25 glass
+/fill ~5 ~11 ~-45 ~5 ~15 ~-25 green_concrete
+/fill ~5 ~11 ~-25 ~25 ~15 ~-25 green_concrete
+/fill ~25 ~11 ~-45 ~25 ~15 ~-25 green_concrete
+/fill ~6 ~11 ~-44 ~24 ~11 ~-26 grass_block
+/fill ~15 ~11 ~-45 ~16 ~15 ~-45 air
+
+# Shop 8 - Art Gallery
+/fill ~30 ~11 ~-45 ~45 ~15 ~-25 glass
+/fill ~30 ~11 ~-45 ~30 ~15 ~-25 white_concrete
+/fill ~30 ~11 ~-25 ~45 ~15 ~-25 white_concrete
+/fill ~45 ~11 ~-45 ~45 ~15 ~-25 white_concrete
+/fill ~31 ~11 ~-44 ~44 ~11 ~-26 white_carpet
+/fill ~37 ~11 ~-45 ~38 ~15 ~-45 air
+
+# === SOUTH WING SHOPS ===
+# Shop 9 - Food Court
+/fill ~-45 ~1 ~25 ~-25 ~5 ~45 glass
+/fill ~-45 ~1 ~25 ~-45 ~5 ~45 orange_concrete
+/fill ~-45 ~1 ~45 ~-25 ~5 ~45 orange_concrete
+/fill ~-25 ~1 ~25 ~-25 ~5 ~45 orange_concrete
+/fill ~-44 ~1 ~26 ~-26 ~1 ~44 orange_wool
+/fill ~-35 ~1 ~45 ~-34 ~5 ~45 air
+
+# Shop 10 - Pharmacy
+/fill ~-20 ~1 ~25 ~0 ~5 ~45 glass
+/fill ~-20 ~1 ~25 ~-20 ~5 ~45 light_blue_concrete
+/fill ~-20 ~1 ~45 ~0 ~5 ~45 light_blue_concrete
+/fill ~0 ~1 ~25 ~0 ~5 ~45 light_blue_concrete
+/fill ~-19 ~1 ~26 ~-1 ~1 ~44 light_blue_wool
+/fill ~-10 ~1 ~45 ~-9 ~5 ~45 air
+
+# Shop 11 - Music Store
+/fill ~5 ~1 ~25 ~25 ~5 ~45 glass
+/fill ~5 ~1 ~25 ~5 ~5 ~45 note_block
+/fill ~5 ~1 ~45 ~25 ~5 ~45 note_block
+/fill ~25 ~1 ~25 ~25 ~5 ~45 note_block
+/fill ~6 ~1 ~26 ~24 ~1 ~44 red_carpet
+/fill ~15 ~1 ~45 ~16 ~5 ~45 air
+
+# Shop 12 - Travel Agency
+/fill ~30 ~1 ~25 ~45 ~5 ~45 glass
+/fill ~30 ~1 ~25 ~30 ~5 ~45 cyan_concrete
+/fill ~30 ~1 ~45 ~45 ~5 ~45 cyan_concrete
+/fill ~45 ~1 ~25 ~45 ~5 ~45 cyan_concrete
+/fill ~31 ~1 ~26 ~44 ~1 ~44 cyan_wool
+/fill ~37 ~1 ~45 ~38 ~5 ~45 air
+
+# === STAIRCASES ===
+/fill ~-48 ~1 ~-20 ~-46 ~1 ~-10 quartz_stairs[facing=north]
+/fill ~-48 ~2 ~-19 ~-46 ~2 ~-11 quartz_stairs[facing=north]
+/fill ~-48 ~3 ~-18 ~-46 ~3 ~-12 quartz_stairs[facing=north]
+/fill ~-48 ~4 ~-17 ~-46 ~4 ~-13 quartz_stairs[facing=north]
+/fill ~-48 ~5 ~-16 ~-46 ~5 ~-14 quartz_stairs[facing=north]
+/fill ~-48 ~6 ~-15 ~-46 ~10 ~-15 quartz_block
+
+/fill ~46 ~1 ~-20 ~48 ~1 ~-10 quartz_stairs[facing=north]
+/fill ~46 ~2 ~-19 ~48 ~2 ~-11 quartz_stairs[facing=north]
+/fill ~46 ~3 ~-18 ~48 ~3 ~-12 quartz_stairs[facing=north]
+/fill ~46 ~4 ~-17 ~48 ~4 ~-13 quartz_stairs[facing=north]
+/fill ~46 ~5 ~-16 ~48 ~5 ~-14 quartz_stairs[facing=north]
+/fill ~46 ~6 ~-15 ~48 ~10 ~-15 quartz_block
+
+# === CEILING & ROOF ===
+/fill ~-50 ~6 ~-50 ~50 ~6 ~50 quartz_slab
+/fill ~-50 ~16 ~-50 ~50 ~16 ~50 quartz_slab
+/fill ~-52 ~30 ~-52 ~52 ~32 ~52 quartz_block
+
+# === LIGHTING ===
+/setblock ~-35 ~4 ~-35 glowstone
+/setblock ~-10 ~4 ~-35 glowstone
+/setblock ~15 ~4 ~-35 glowstone
+/setblock ~37 ~4 ~-35 glowstone
+
+/setblock ~-35 ~4 ~35 glowstone
+/setblock ~-10 ~4 ~35 glowstone
+/setblock ~15 ~4 ~35 glowstone
+/setblock ~37 ~4 ~35 glowstone
+
+/setblock ~0 ~20 ~0 sea_lantern
+/setblock ~-10 ~8 ~0 sea_lantern
+/setblock ~10 ~8 ~0 sea_lantern
+/setblock ~0 ~8 ~-10 sea_lantern
+/setblock ~0 ~8 ~10 sea_lantern
+
+# === SHOP SIGNS ===
+/setblock ~-35 ~3 ~-50 oak_wall_sign[facing=south]{Text1:'{"text":"ELECTRONICS","color":"blue","bold":true}',Text2:'{"text":"Latest Tech","color":"dark_blue"}'}
+
+/setblock ~-10 ~3 ~-50 oak_wall_sign[facing=south]{Text1:'{"text":"FASHION","color":"light_purple","bold":true}',Text2:'{"text":"Trendy Clothes","color":"purple"}'}
+
+/setblock ~15 ~3 ~-50 oak_wall_sign[facing=south]{Text1:'{"text":"BOOKSTORE","color":"brown","bold":true}',Text2:'{"text":"Digital Books","color":"dark_red"}'}
+
+/setblock ~37 ~3 ~-50 oak_wall_sign[facing=south]{Text1:'{"text":"LUXURY","color":"gold","bold":true}',Text2:'{"text":"Fine Jewelry","color":"yellow"}'}
+
+# Second floor signs
+/setblock ~-35 ~13 ~-50 oak_wall_sign[facing=south]{Text1:'{"text":"GAMING/VR","color":"dark_purple","bold":true}',Text2:'{"text":"Virtual Reality","color":"purple"}'}
+
+/setblock ~-10 ~13 ~-50 oak_wall_sign[facing=south]{Text1:'{"text":"SPORTS","color":"dark_green","bold":true}',Text2:'{"text":"Equipment","color":"green"}'}
+
+/setblock ~15 ~13 ~-50 oak_wall_sign[facing=south]{Text1:'{"text":"HOME & GARDEN","color":"dark_green","bold":true}',Text2:'{"text":"Living Space","color":"green"}'}
+
+/setblock ~37 ~13 ~-50 oak_wall_sign[facing=south]{Text1:'{"text":"ART GALLERY","color":"black","bold":true}',Text2:'{"text":"Fine Arts","color":"gray"}'}
+
+# South wing signs
+/setblock ~-35 ~3 ~50 oak_wall_sign[facing=north]{Text1:'{"text":"FOOD COURT","color":"red","bold":true}',Text2:'{"text":"Dining","color":"dark_red"}'}
+
+/setblock ~-10 ~3 ~50 oak_wall_sign[facing=north]{Text1:'{"text":"PHARMACY","color":"aqua","bold":true}',Text2:'{"text":"Health & Wellness","color":"dark_aqua"}'}
+
+/setblock ~15 ~3 ~50 oak_wall_sign[facing=north]{Text1:'{"text":"MUSIC STORE","color":"red","bold":true}',Text2:'{"text":"Instruments","color":"dark_red"}'}
+
+/setblock ~37 ~3 ~50 oak_wall_sign[facing=north]{Text1:'{"text":"TRAVEL AGENCY","color":"dark_aqua","bold":true}',Text2:'{"text":"Adventures","color":"blue"}'}
+
+# === DIRECTORY ===
+/setblock ~0 ~3 ~-10 oak_sign{Text1:'{"text":"MALL DIRECTORY","color":"dark_green","bold":true}',Text2:'{"text":"Ground Floor:","color":"green"}',Text3:'{"text":"North: Shops 1-4","color":"green"}',Text4:'{"text":"South: Shops 9-12","color":"green"}'}
+
+/setblock ~1 ~3 ~-10 oak_sign{Text1:'{"text":"Second Floor:","color":"green"}',Text2:'{"text":"North: Shops 5-8","color":"green"}',Text3:'{"text":"Use stairs on","color":"green"}',Text4:'{"text":"east/west sides","color":"green"}'}
+
+/say Shopping Mall construction complete!
+/say Welcome to the SSI Metaverse Shopping Mall!
+/say 12 shops across 2 floors with central atrium!
